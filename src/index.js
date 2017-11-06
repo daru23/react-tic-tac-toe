@@ -97,7 +97,7 @@ class Game extends React.Component {
     jumpTo(step) {
         this.setState({
             stepNumber : step,
-            xIsNext : (step % 2) == 0
+            xIsNext : (step % 2) === 0,
         })
     }
 
@@ -112,7 +112,7 @@ class Game extends React.Component {
                 'Go to game start';
             return (
                 <li key={move}>
-                    <button onClick={() => this.jumpTo(move)}>{desc}</button>
+                    <button type="button" className="btn btn-sm btn-outline-info" onClick={() => this.jumpTo(move)}>{desc}</button>
                 </li>
             )
         });
@@ -126,15 +126,15 @@ class Game extends React.Component {
 
         return (
             <div className="game">
-                <div className="game-board">
+                <div className="col-6 game-board">
                     <Board
                         squares={current.squares}
                         onClick={(i) => this.handleClick(i)}
                     />
                 </div>
-                <div className="game-info">
+                <div className="col-6 game-info">
                     <div>{ status }</div>
-                    <ol>{ moves }</ol>
+                    <ol className="moves-list">{ moves }</ol>
                 </div>
             </div>
         );
