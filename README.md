@@ -2,8 +2,10 @@
 tic tac toe with ReactJS
 
 ## TODO
+
 - Write a good README 
-- Fix css
+~~- Fix css~~
+~~- Choose different colors for each player~~
 - Display the move locations in the format “(1, 3)” in the move list.
 - Bold the currently selected item in the move list.
 - Rewrite Board to use two loops to make the squares instead of hardcoding them.

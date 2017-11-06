@@ -4,7 +4,7 @@ import './index.css';
 
 function Square(props) {
     return (
-        <button className="square" onClick={props.onClick}>
+        <button className={props.letterClass} onClick={props.onClick}>
             {props.value}
         </button>
     )
@@ -36,9 +36,18 @@ function calculateWinner(squares) {
 
 class Board extends React.Component {
 
+    setColor(i) {
+        if (this.props.squares[i] === 'X') {
+            return "square blue-letters"
+        } else {
+            return "square green-letters"
+        }
+    }
+
     renderSquare(i) {
         return <Square value={this.props.squares[i]}
                        onClick={() => this.props.onClick(i)}
+                       letterClass={this.setColor(i)}
         />;
     }
 
