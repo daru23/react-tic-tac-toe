@@ -81,3 +81,6 @@ typings/
 .env
 
 >>>>>>> b45f48a40ef6f4c4f47b621ad1e2ddedf74e47cd
+
+#IDE style
+.idea
