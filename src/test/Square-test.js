@@ -10,7 +10,7 @@ import renderer from 'react-test-renderer';
 import Square from '../components/Square';
 
 
-test('Link changes the class when hovered', () => {
+test('Square renders X value', () => {
 
     const component = renderer.create(
         <Square value="X"
