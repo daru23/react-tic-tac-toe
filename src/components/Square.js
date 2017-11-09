@@ -5,3 +5,11 @@
  */
 
 import React from 'react';
+
+export default function Square (props) {
+    return (
+        <button className={props.letterClass} onClick={props.onClick}>
+            {props.value}
+        </button>
+    )
+}
