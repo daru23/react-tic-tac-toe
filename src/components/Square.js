@@ -6,7 +6,7 @@
 
 import React from 'react';
 
-export default class Board extends React.Component {
+export default class Square extends React.Component {
     render () {
         return (
         <button className={this.props.letterClass} onClick={this.props.onClick}>
