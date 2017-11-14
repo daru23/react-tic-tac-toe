@@ -14,7 +14,7 @@ test('Square renders X value', () => {
 
     const component = renderer.create(
         <Square value="X"
-                className="square blue-letters"
+                className=""
                 onClick={() => {}} />
     );
 
