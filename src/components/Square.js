@@ -6,10 +6,12 @@
 
 import React from 'react';
 
-export default function Square (props) {
-    return (
-        <button className={props.letterClass} onClick={props.onClick}>
-            {props.value}
+export default class Board extends React.Component {
+    render () {
+        return (
+        <button className={this.props.letterClass} onClick={this.props.onClick}>
+            {this.props.value}
         </button>
-    )
+        )
+    }
 }
