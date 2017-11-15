@@ -7,10 +7,6 @@ ol, ul {
     padding-left: 30px;
 }
 
-.main-container {
-    max-width: 50%;
-}
-
 .board-row:after {
     clear: both;
     content: "";
@@ -46,10 +42,20 @@ ol, ul {
 
 .game {
     display: flex;
+    align-items: center;
     flex-direction: row;
+    justify-content: center;
+
+}
+
+.game-board {
+    max-width: 50%;
+    margin-left: 20px;
+    align-self: flex-start;
 }
 
 .game-info {
+    max-width: 50%;
     margin-left: 20px;
 }
 
@@ -63,9 +69,16 @@ ol, ul {
 }
 
 .blue-letters {
-    color: #2F5B93;
+    color: #17a2b8;
 }
 
-.green-letters {
-    color: #6A906D;
+.red-letters {
+    color: darkred;
+}
+
+.nav-spec {
+    position: relative;
+    color: #fff;
+    background-color: #17a2b8;
+    margin-bottom: 20px;
 }
