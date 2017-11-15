@@ -13,7 +13,7 @@ export default class Board extends React.Component {
         if (this.props.squares[i] === 'X') {
             return "square blue-letters"
         } else {
-            return "square green-letters"
+            return "square red-letters"
         }
     }
 
