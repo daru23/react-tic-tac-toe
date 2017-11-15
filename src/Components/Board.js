@@ -24,23 +24,31 @@ export default class Board extends React.Component {
         />;
     }
 
+    renderBoardItems() {
+
+        let lines = [];
+
+        for (let i=0; i < 9; i++) {
+            lines.push(this.renderSquare(i));
+        }
+
+        return lines;
+    }
+
     render() {
+
+        let lines = this.renderBoardItems();
+
         return (
             <div>
                 <div className="board-row">
-                    {this.renderSquare(0)}
-                    {this.renderSquare(1)}
-                    {this.renderSquare(2)}
+                    {lines.slice(0,3)}
                 </div>
                 <div className="board-row">
-                    {this.renderSquare(3)}
-                    {this.renderSquare(4)}
-                    {this.renderSquare(5)}
+                    {lines.slice(3,6)}
                 </div>
                 <div className="board-row">
-                    {this.renderSquare(6)}
-                    {this.renderSquare(7)}
-                    {this.renderSquare(8)}
+                    {lines.slice(6,9)}
                 </div>
             </div>
         );
