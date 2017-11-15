@@ -4,8 +4,8 @@ tic tac toe with ReactJS
 ## TODO
 
 - Write a good README 
-~~- Fix css~~
-~~- Choose different colors for each player~~
+- ~~Fix css~~
+- ~~Choose different colors for each player~~
 - Tests for the Components
 - Make multi style option using SASS
 - Display the move locations in the format “(1, 3)” in the move list.
