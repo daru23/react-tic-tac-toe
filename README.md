@@ -1,6 +1,20 @@
 # react-tic-tac-toe
 tic tac toe with ReactJS
 
+## First Run
+
+```
+    npm install
+    npm start
+```
+
+## Run Tests
+
+```
+    npm install --only=dev
+    npm test 
+```
+
 ## TODO
 
 - Write a good README 
