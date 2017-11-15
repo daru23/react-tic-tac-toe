@@ -91,14 +91,14 @@ export default class Game extends React.Component {
         }
 
         return (
-            <div className="game">
-                <div className="col-6 game-board">
+            <div className="game main-container">
+                <div className="game-board">
                     <Board
                         squares={current.squares}
                         onClick={(i) => this.handleClick(i)}
                     />
                 </div>
-                <div className="col-6 game-info">
+                <div className="game-info">
                     <div>{ status }</div>
                     <ol className="moves-list">{ moves }</ol>
                 </div>
