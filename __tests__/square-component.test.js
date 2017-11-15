@@ -1,7 +1,7 @@
 /**
  * Created by Daniela Ruiz - daru015@gmail.com
  * Date: 09/11/2017
- * File: square-function.test.js
+ * File: square-component.test.js
  */
 
 import React from 'react';
