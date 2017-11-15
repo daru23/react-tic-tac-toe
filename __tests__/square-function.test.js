@@ -7,7 +7,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Square from '../src/components/Square.js';
+import Square from '../src/Components/Square.js';
 
 const i = 0;
 const props = { value: 'X', letterClass: "blue-letters", onClick : (x)=>{} };
